@@ -1,0 +1,24 @@
+10/12/2018 7:45:15 μμ ERROR [Thread-4    ] eaming.I2PSocketManagerFactory: Error creating session for socket manager
+net.i2p.client.I2PSessionException: [OPENING I2PSessionMuxedImpl]: Cannot connect to the router on 127.0.0.1:7654 and build tunnels
+	at net.i2p.client.impl.I2PSessionImpl.connect(I2PSessionImpl.java:731)
+	at net.i2p.client.streaming.I2PSocketManagerFactory.createManager(I2PSocketManagerFactory.java:247)
+	at net.i2p.client.streaming.I2PSocketManagerFactory.createManager(I2PSocketManagerFactory.java:167)
+	at net.i2p.client.streaming.I2PSocketManagerFactory.createManager(I2PSocketManagerFactory.java:108)
+	at net.i2p.client.streaming.I2PSocketManagerFactory.createManager(I2PSocketManagerFactory.java:58)
+	at AFUService.run(AFUService.java:32)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:79)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at java.net.Socket.connect(Socket.java:538)
+	at java.net.Socket.<init>(Socket.java:434)
+	at java.net.Socket.<init>(Socket.java:211)
+	at net.i2p.client.impl.I2PSessionImpl.connect(I2PSessionImpl.java:651)
+	... 6 more
+10/12/2018 7:45:15 μμ ^^^ 1 similar message omitted ^^^
